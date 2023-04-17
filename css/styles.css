@@ -223,13 +223,19 @@ img {
 .text-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
-.icon-text {
+.container-icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--cloud);
   border-radius: 4px;
-  background: var(--cloud);
+  margin-bottom: 8px;
+}
+.icon-text {
   width: 264px;
   height: 112px;
   padding: 24px 100px;
-  margin-bottom: 8px;
 }
 .text-subtitle {
   margin-bottom: 8px;
