@@ -316,9 +316,12 @@ img {
 .item-team {
   background-color: var(--white);
   flex-basis: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .card-container {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -347,6 +350,7 @@ img {
   padding-bottom: 8px;
 }
 .socials-list {
+  justify-content: center;
 }
 .socials {
 }
@@ -357,15 +361,20 @@ img {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .socials-link:hover,
 .socials-link:focus {
-  background: var(--green);
+  background-color: var(--ocean);
+}
+.socials-icon {
+  fill: var(--cloud);
 }
 /* section customers */
 
 .section-customers {
-  padding-bottom: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .customers-container {
   width: 1128px;
@@ -383,8 +392,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
-
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -407,15 +415,31 @@ img {
   gap: 24px;
 }
 .customers-item {
+  width: calc((100% - 120px) / 6);
   padding: 16px 32px;
   box-sizing: border-box;
-  border: 1px solid var(--light-slate);
-  border-radius: 4px;
-}
-.customers-link {
-  width: 168px;
+
   height: 88px;
 }
+
+.customers-link {
+  /* width: 168px;
+  height: 88px; */
+  width: 100%;
+  height: 100%;
+  color: var(--light-slate);
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
+
 .customers-icon {
 }
 /* portfolio */
