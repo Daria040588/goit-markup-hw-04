@@ -516,9 +516,9 @@ img {
   padding: 100px 0;    
 }
 .footer-container {
-  margin-right: 120px;
   display: flex;  
-  align-items: baseline;  
+  align-items: baseline;
+  gap: 120px; 
 }
 .logo-text-footer{
   margin-right: 120px;
