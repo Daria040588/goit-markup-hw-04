@@ -402,8 +402,7 @@ img {
 }
 .customers-item {
   width: calc((100% - 120px) / 6);
-    box-sizing: border-box;
-
+  box-sizing: border-box;
   height: 88px;
 }
 
@@ -514,14 +513,12 @@ img {
 /* footer */
 .page-footer {
   background-color: var(--navy-blue);
-  padding: 100px 0;
-    
+  padding: 100px 0;    
 }
 .footer-container {
   margin-right: 120px;
   display: flex;  
-  align-items: baseline;
-  
+  align-items: baseline;  
 }
 .logo-text-footer{
   margin-right: 120px;
@@ -553,7 +550,6 @@ img {
   text-transform: uppercase;
   color: var(--cloud);
 }
-
 .text-footer {
   height: 72px;
   max-width: 264px;
