@@ -518,7 +518,7 @@ img {
 .footer-container {
   display: flex;  
   align-items: baseline;
-  gap: 120px; 
+  gap: 120px;   
 }
 .logo-text-footer{
   margin-right: 120px;
@@ -551,7 +551,7 @@ img {
   color: var(--cloud);
 }
 .text-footer {
-  height: 72px;
+  min-height: 72px;
   max-width: 264px;
   font-style: normal;
   font-weight: 400;
@@ -561,27 +561,21 @@ img {
   color: var(--cloud);
 }
 .social-melia-container {
-  display: flex;
-  justify-content: center;
-  display: inline-block;
-    
+  justify-content: center;    
 }
 .social-media-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.02em;
   color: var(--white);
-  padding-top: 100px;
-  padding-left: 120px;
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 .social-media-list {
   display: flex;
   gap: 16px;
+  padding-left: 0;
+  margin: 0 0;
 }
 .social-media-item {
   height: 40px; 
@@ -591,11 +585,12 @@ img {
   width: 40px;
   height: 40px;
   background: var(--iris);
-  padding: 12px;
-  border-radius: 50%;
+  padding: 8px;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .social-media-link:hover,
 .social-media-link:focus {
